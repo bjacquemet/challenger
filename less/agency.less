@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('../img/landing.jpg');
+    background-image: url('/img/index/landing.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -528,7 +528,7 @@ aside.clients {
 
 section#contact {
     background-color: @gray-darker;
-    background-image: url('../img/map-image.png');
+    background-image: url('/img/index/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
@@ -775,7 +775,7 @@ hr.section-heading-spacer {
         line-height: 1.6em;
         font-size: 17px;
         font-weight: 300;
-        list-style-image: url('/img/check_mark.png');
+        list-style-image: url('/img/index/check_mark.png');
         // &:before{
         //     content: '✔';
         //     color: green;
@@ -799,5 +799,47 @@ hr.section-heading-spacer {
 @media (max-width:768px) {
     .row .col-xs-12 {
         margin-top: 20px;
+    }
+}
+
+.report {
+    img.user {
+        border: 1px solid @theme-primary;
+        padding:15px;
+    }
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active {
+        color: inherit;
+    }
+    h1, h2, h3, h4, h5 {
+        text-transform: initial;
+    }
+    h3 {
+        margin: 10px 0 5px 0;
+        font-size: 1.3em;
+    }
+    p {
+        margin: 0;
+        line-height: 1.6em;
+    }
+    b {
+        color: @gray;
+    }
+    em.average {
+        color: @theme-primary;
+        font-style: initial;
+    }
+    .report-section {
+        margin: 20px 0px;
+        border: 1px solid @theme-primary;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        border-radius: 4px;
+    }
+    hr {
+        border-top: 1px solid @gray-light;
     }
 }

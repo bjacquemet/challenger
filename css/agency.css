@@ -229,7 +229,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/landing.jpg');
+  background-image: url('/img/index/landing.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -317,7 +317,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
+  background-image: url('/img/index/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -474,7 +474,7 @@ hr.section-heading-spacer {
   line-height: 1.6em;
   font-size: 17px;
   font-weight: 300;
-  list-style-image: url('/img/check_mark.png');
+  list-style-image: url('/img/index/check_mark.png');
 }
 #convictions ul,
 #projects ul {
@@ -491,4 +491,47 @@ hr.section-heading-spacer {
   .row .col-xs-12 {
     margin-top: 20px;
   }
+}
+.report img.user {
+  border: 1px solid #469E96;
+  padding: 15px;
+}
+.report a,
+.report a:hover,
+.report a:focus,
+.report a:active,
+.report a.active {
+  color: inherit;
+}
+.report h1,
+.report h2,
+.report h3,
+.report h4,
+.report h5 {
+  text-transform: initial;
+}
+.report h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.3em;
+}
+.report p {
+  margin: 0;
+  line-height: 1.6em;
+}
+.report b {
+  color: #555555;
+}
+.report em.average {
+  color: #469E96;
+  font-style: initial;
+}
+.report .report-section {
+  margin: 20px 0px;
+  border: 1px solid #469E96;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-radius: 4px;
+}
+.report hr {
+  border-top: 1px solid #777777;
 }
