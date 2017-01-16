@@ -6,6 +6,7 @@
 body {
     overflow-x: hidden;
     .body-font;
+    font-size: 14px;
 }
 
 .text-muted {
@@ -17,7 +18,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 1.1em;
     line-height: 1.75;
 }
 
@@ -31,10 +32,11 @@ a:focus,
 a:active,
 a.active {
     outline: none;
+    text-decoration: none;
 }
 
 a {
-    color: @theme-primary;
+    color: @theme-secondary;
     font-weight: 500;
 }
 
@@ -42,7 +44,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: darken(@theme-primary, 5%);
+    color: darken(@theme-secondary, 5%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -178,13 +180,6 @@ header {
     .intro-text {
         padding-top: 100px;
         padding-bottom: 50px;
-        .intro-lead-in {
-            .serif-font;
-            font-style: italic;
-            font-size: 22px;
-            line-height: 22px;
-            margin-bottom: 25px;
-        }
         .intro-heading {
             .heading-font;
             text-shadow: 2px 2px 4px @gray-dark;
@@ -201,13 +196,6 @@ header {
         .intro-text {
             padding-top: 250px;
             padding-bottom: 200px;
-            .intro-lead-in {
-                .serif-font;
-                font-style: italic;
-                font-size: 40px;
-                line-height: 40px;
-                margin-bottom: 25px;
-            }
             .intro-heading {
                 .heading-font;
                 font-weight: 700;
@@ -235,7 +223,9 @@ section {
         text-transform: none;
         font-style: italic;
         font-weight: 400;
-        margin-bottom: 50px;
+        @media (min-width:768px) {
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -602,6 +592,13 @@ footer {
         .heading-font;
         text-transform: none;
     }
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active {
+        color: inherit;
+    }
 }
 
 // Social Buttons
@@ -719,12 +716,12 @@ ul.social-buttons {
 
 ::-moz-selection {
     text-shadow: none;
-    background: @theme-primary;
+    background: lighten(@theme-primary, 35%);
 }
 
 ::selection {
     text-shadow: none;
-    background: @theme-primary;
+    background: lighten(@theme-primary, 35%);
 }
 
 img::selection {
@@ -736,7 +733,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: @theme-primary;
+    webkit-tap-highlight-color: lighten(@theme-primary, 35%);
 }
 
 #solution, #advantages {
@@ -746,12 +743,24 @@ body {
 }
 
 .lead {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 2em;
+  margin: 20px 0px 0 0;
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 18px;
+    font-size: 25px;
+    line-height: 2em;
   }
+}
+
+.lead:hover > mark {
+    background-color: @highlight-theme-hover;
+}
+.mark, mark {
+    color: @gray-base;
+    padding: 0.3em 0.1em;
+    background-color: @highlight-theme;
 }
 
 hr.section-heading-spacer {
@@ -766,12 +775,13 @@ hr.section-heading-spacer {
         line-height: 1.6em;
         font-size: 17px;
         font-weight: 300;
-        &:before{
-            content: '✔';
-            color: green;
-            margin-left: -1em;
-            margin-right: .700em;
-        }
+        list-style-image: url('/img/check_mark.png');
+        // &:before{
+        //     content: '✔';
+        //     color: green;
+        //     margin-left: -1em;
+        //     margin-right: .700em;
+        // }
     }
 
     ul{
@@ -781,9 +791,13 @@ hr.section-heading-spacer {
        list-style-position:outside;
     }
 }
-.form-control {
-    font-size: 18px;
+.hiw_subtitle {
+    color:#469E96;
+    font-size: 20px
 }
-#mce-EMAIL {
-    width: 100%;
+
+@media (max-width:768px) {
+    .row .col-xs-12 {
+        margin-top: 20px;
+    }
 }
