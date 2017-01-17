@@ -10,16 +10,17 @@ body {
 }
 .text-muted {
   color: #777777;
+  font-size: 1.1em;
 }
 .text-primary {
   color: #469E96;
 }
 p {
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
-p.large {
-  font-size: 1.15em;
+li {
+  font-size: 1.05em;
 }
 a,
 a:hover,
@@ -468,15 +469,13 @@ hr.section-heading-spacer {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-#convictions li,
-#projects li {
+#convictions li {
   line-height: 1.6em;
   font-size: 1.25em;
   font-weight: 300;
   list-style-image: url('../img/index/check_mark.png');
 }
-#convictions ul,
-#projects ul {
+#convictions ul {
   padding-left: 20px;
   text-indent: 2px;
   list-style: none;
