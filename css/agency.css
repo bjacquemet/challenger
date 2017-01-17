@@ -503,6 +503,10 @@ hr.section-heading-spacer {
 .report a.active {
   color: inherit;
 }
+.report a:hover {
+  color: #222222;
+  text-decoration: underline;
+}
 .report h1,
 .report h2,
 .report h3,
@@ -514,16 +518,19 @@ hr.section-heading-spacer {
   margin: 10px 0 5px 0;
   font-size: 1.3em;
 }
+.report h5 {
+  font-size: 1.15em;
+  line-height: 1.5em;
+  margin: 0;
+  color: #469E96;
+  font-weight: 400;
+}
 .report p {
   margin: 0;
   line-height: 1.6em;
 }
 .report b {
   color: #555555;
-}
-.report em.average {
-  color: #469E96;
-  font-style: initial;
 }
 .report .report-section {
   margin: 20px 0px;

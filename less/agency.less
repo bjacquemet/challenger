@@ -814,12 +814,23 @@ hr.section-heading-spacer {
     a.active {
         color: inherit;
     }
+    a:hover {
+        color: @gray-darker;
+        text-decoration: underline;
+    }
     h1, h2, h3, h4, h5 {
         text-transform: initial;
     }
     h3 {
         margin: 10px 0 5px 0;
         font-size: 1.3em;
+    }
+    h5 {
+        font-size: 1.15em;
+        line-height: 1.5em;
+        margin: 0;
+        color: @theme-primary;
+        font-weight: 400;
     }
     p {
         margin: 0;
@@ -829,8 +840,8 @@ hr.section-heading-spacer {
         color: @gray;
     }
     em.average {
-        color: @theme-primary;
-        font-style: initial;
+        // color: @theme-primary;
+        // font-style: initial;
     }
     .report-section {
         margin: 20px 0px;
