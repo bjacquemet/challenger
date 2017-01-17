@@ -1,5 +1,5 @@
 /*!
- * Challengers - Challenger Project v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
+ * Challengers - Challenger Project v3.3.7+1 ()
  * Copyright 2017-2017 Cajac
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
