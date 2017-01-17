@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Challenger Project v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
+ * Challengers - Challenger Project v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
  * Copyright 2017-2017 Cajac
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
@@ -513,15 +513,24 @@ hr.section-heading-spacer {
 .report h4,
 .report h5 {
   text-transform: initial;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.report h1 {
+  color: #555555;
+}
+.report h2 {
+  margin-bottom: 0px;
+  color: #469E96;
 }
 .report h3 {
   margin: 10px 0 5px 0;
   font-size: 1.3em;
+  color: #555555;
 }
 .report h5 {
   font-size: 1.15em;
   line-height: 1.5em;
-  margin: 0;
+  margin: 10px 0 0 0;
   color: #469E96;
   font-weight: 400;
 }
@@ -532,13 +541,25 @@ hr.section-heading-spacer {
 .report b {
   color: #555555;
 }
-.report .report-section {
-  margin: 20px 0px;
+.report .report-section,
+.report .report-section-gray {
   border: 1px solid #469E96;
   padding-bottom: 20px;
   padding-top: 10px;
   border-radius: 4px;
+  margin: 0 0 20px 0px;
 }
-.report hr {
-  border-top: 1px solid #777777;
+.report .report-section:not(:first-of-type),
+.report .report-section-gray:not(:first-of-type) {
+  margin: 20px 0px;
+}
+.report .report-section-gray {
+  border: 1px solid #555555;
+}
+.report span.primary {
+  color: #469E96;
+}
+.report .fa {
+  color: #D14C48;
+  cursor: pointer;
 }

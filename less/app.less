@@ -820,15 +820,24 @@ hr.section-heading-spacer {
     }
     h1, h2, h3, h4, h5 {
         text-transform: initial;
+        .body-font;
+    }
+    h1 {
+      color: @gray;
+    }
+    h2 {
+      margin-bottom: 0px;
+      color: @theme-primary;
     }
     h3 {
         margin: 10px 0 5px 0;
         font-size: 1.3em;
+        color: @gray;
     }
     h5 {
         font-size: 1.15em;
         line-height: 1.5em;
-        margin: 0;
+        margin: 10px 0 0 0;
         color: @theme-primary;
         font-weight: 400;
     }
@@ -839,18 +848,27 @@ hr.section-heading-spacer {
     b {
         color: @gray;
     }
-    em.average {
-        // color: @theme-primary;
-        // font-style: initial;
-    }
-    .report-section {
-        margin: 20px 0px;
+    .report-section, .report-section-gray {
         border: 1px solid @theme-primary;
         padding-bottom: 20px;
         padding-top: 10px;
         border-radius: 4px;
+        margin: 0 0 20px 0px;
+        &:not(:first-of-type){
+          margin: 20px 0px;
+        }
     }
-    hr {
-        border-top: 1px solid @gray-light;
+    .report-section-gray {
+        border: 1px solid @gray;
+    }
+    // hr {
+    //     border-top: 1px solid @gray-light;
+    // }
+    span.primary {
+      color: @theme-primary;
+    }
+    .fa {
+      color: @theme-secondary;
+      cursor: pointer;
     }
 }
