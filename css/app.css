@@ -229,7 +229,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('img/index/landing.jpg');
+  background-image: url('../img/index/landing.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -317,7 +317,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('img/index/map-image.png');
+  background-image: url('../img/index/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -474,7 +474,7 @@ hr.section-heading-spacer {
   line-height: 1.6em;
   font-size: 17px;
   font-weight: 300;
-  list-style-image: url('img/index/check_mark.png');
+  list-style-image: url('../img/index/check_mark.png');
 }
 #convictions ul,
 #projects ul {
